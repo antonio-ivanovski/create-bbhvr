@@ -1,12 +1,19 @@
 {
-	"name": "create-bhvr",
-	"version": "0.6.4",
-	"description": "Create a new bhvr project",
+	"name": "create-bbhvr",
+	"version": "0.6.4-bbhvr.0",
+	"description": "Create a new bbhvr project",
 	"type": "module",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"bin": {
-		"create-bhvr": "./dist/index.js"
+		"create-bbhvr": "./dist/index.js"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"createBbhvr": {
+		"upstreamVersion": "0.6.4",
+		"forkRevision": 0
 	},
 	"files": [
 		"dist"

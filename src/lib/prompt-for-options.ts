@@ -13,8 +13,8 @@ export async function promptForOptions(
 		const { data, error } = await tryCatch(
 			consola.prompt(pc.yellow("What is the name of your project?"), {
 				type: "text",
-				default: "my-bhvr-app",
-				placeholder: "my-bhvr-app",
+				default: "my-bbhvr-app",
+				placeholder: "my-bbhvr-app",
 				cancel: "reject",
 			}),
 		);

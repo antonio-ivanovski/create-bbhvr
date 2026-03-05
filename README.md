@@ -1,22 +1,22 @@
-# create-bhvr 🦫
+# create-bbhvr 🦫
 
 ![cover](https://cdn.stevedylan.dev/ipfs/bafybeievx27ar5qfqyqyud7kemnb5n2p4rzt2matogi6qttwkpxonqhra4)
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/stevedylandev/create-bhvr/blob/main/LICENSE)
-![create-bhvr version](https://img.shields.io/npm/v/create-bhvr.svg?label=%20)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/stevedylandev/create-bbhvr/blob/main/LICENSE)
+![create-bbhvr version](https://img.shields.io/npm/v/create-bbhvr.svg?label=%20)
 
-A command-line interface (CLI) to quickly scaffold a new `bhvr` project. `bhvr` is a full-stack TypeScript monorepo starter with shared types, using Bun, Hono, Vite, and React.
+A command-line interface (CLI) to quickly scaffold a new `bbhvr` project. `bbhvr` is a full-stack TypeScript monorepo starter with shared types, using Bun, Hono, Vite, and React.
 
 ## Getting Started
 
-To create a new `bhvr` project, run any of the following commands and follow the interactive prompts:
+To create a new `bbhvr` project, run any of the following commands and follow the interactive prompts:
 
 ```bash
 # Using Bun
-bun create bhvr@latest my-bhvr-app
+bun create bbhvr@latest my-bbhvr-app
 ```
 
-This will create a new directory called `my-bhvr-app` inside the current folder.
+This will create a new directory called `my-bbhvr-app` inside the current folder.
 
 > [!NOTE]
 > Check out [bhvr.dev](https://bhvr.dev) for the full documentation!
@@ -61,8 +61,8 @@ bun upgrade
 Clone the repo, install dependencies, and build
 
 ```bash
-git clone https://github.com/stevedylandev/create-bhvr
-cd create-bhvr
+git clone https://github.com/stevedylandev/create-bbhvr
+cd create-bbhvr
 bun install
 bun run build
 ```
@@ -77,7 +77,7 @@ Alternatively you can use `bun link` and use it as a local executable
 
 ```bash
 bun link
-create-bhvr
+create-bbhvr
 ```
 
 ## Contributing
@@ -85,6 +85,12 @@ create-bhvr
 We welcome contributions from the community! Whether it's reporting a bug, suggesting a new feature, or submitting a pull request, your help is appreciated.
 
 Please read our [**CONTRIBUTING.md**](CONTRIBUTING.md) for detailed guidelines on how to get started.
+
+## Versioning
+
+This package uses a composite versioning scheme (`UPSTREAM-bbhvr.INTERNAL`) to track both the upstream `create-bhvr` version and fork-specific changes. See [VERSIONING.md](VERSIONING.md) for details.
+
+Install via npm: `npm install -g create-bbhvr` or use with `npx create-bbhvr`.
 
 ## Links
 

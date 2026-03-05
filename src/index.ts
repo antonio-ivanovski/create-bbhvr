@@ -7,8 +7,8 @@ import { program } from "@/program";
 import { DEFAULT_REPO } from "./utils";
 
 program
-	.name("create-bhvr")
-	.description("Create a bhvr monorepo starter project")
+	.name("create-bbhvr")
+	.description("Create a bbhvr monorepo starter project")
 	.argument("[project-directory]", "directory to create the project in")
 	.option("-y, --yes", "skip confirmation prompts")
 	.option(

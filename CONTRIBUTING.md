@@ -1,6 +1,6 @@
-# Contributing to create-bhvr
+# Contributing to create-bbhvr
 
-First off, thank you for considering contributing to `create-bhvr`.
+First off, thank you for considering contributing to `create-bbhvr`.
 
 ## How Can I Contribute?
 
@@ -27,7 +27,7 @@ If you have an idea for an enhancement, please make sure the enhancement has not
 
 ## Repo Structure
 
-`create-bhvr` is a CLI tool that generates full-stack TypeScript projects using the Bun + Hono + Vite + React (BHVR) stack. The tool scaffolds projects from GitHub templates and allows users to add various extensions like TanStack Query, React Router, and more.
+`create-bbhvr` is a CLI tool that generates full-stack TypeScript projects using the Bun + Hono + Vite + React (BBHVR) stack. The tool scaffolds projects from GitHub templates and allows users to add various extensions like TanStack Query, React Router, and more.
 
 ### Project Architecture
 
@@ -61,7 +61,7 @@ src/
 
 ### How Extensions Work
 
-Extensions in create-bhvr follow a modular architecture where each extension has:
+Extensions in create-bbhvr follow a modular architecture where each extension has:
 
 1. **An Installer** (`src/installers/*.ts`) that handles:
    - Adding dependencies via `addPackageDependency()`
