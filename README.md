@@ -1,5 +1,8 @@
 # create-bbhvr 🦫
 
+> [!IMPORTANT]
+> `create-bbhvr` is a fork of [`create-bhvr`](https://github.com/stevedylandev/create-bhvr), with the goal of being a bit better for this workflow. The name means **better-bun-hono-vite-react**.
+
 ![cover](https://cdn.stevedylan.dev/ipfs/bafybeievx27ar5qfqyqyud7kemnb5n2p4rzt2matogi6qttwkpxonqhra4)
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/stevedylandev/create-bbhvr/blob/main/LICENSE)
@@ -7,9 +10,13 @@
 
 A command-line interface (CLI) to quickly scaffold a new `bbhvr` project. `bbhvr` is a full-stack TypeScript monorepo starter with shared types, using Bun, Hono, Vite, and React.
 
+## Differences from create-bhvr
+
+- Adds `--no-build` option to skip TypeScript compilation and import directly from source. This option is the primary reason for the fork (upstream PR declined: https://github.com/stevedylandev/create-bhvr/pull/28).
+
 ## Getting Started
 
-To create a new `bbhvr` project, run any of the following commands and follow the interactive prompts:
+Use one of these commands:
 
 ```bash
 # Using Bun
@@ -45,8 +52,15 @@ You can also use command-line options to skip the interactive prompts:
 | `--template <template>` | Specify a template (`default`, `tailwind`, `shadcn`).        | `default` |
 | `--rpc`                 | Use Hono RPC for type-safe API communication.                | `false`   |
 | `--tsquery`             | Use TanStack Query for data fetching and state management.   | `false`   |
-| `--router <router>`     | Specify a client router (`none`, `reactrouter`, `tanstackrouter`). | `none`    |
+| `--router <router>`     | Specify a client router (`none`, `reactrouter`, `reactroutermpa`, `tanstackrouter`). | `none`    |
 | `--linter <linter>`     | Specify the linter to use (`eslint` or `biome`).             | `eslint`  |
+| `--no-build`            | Skip TypeScript compilation (simpler setup, not packageable). | `true`    |
+
+### Example with fork-only option
+
+```bash
+bun create bbhvr@latest my-bbhvr-app --no-build
+```
 
 
 ## Development
